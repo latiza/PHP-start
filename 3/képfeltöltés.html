@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Képkezelési teszt</title>
+    <style>
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Válaszd ki a képet, amelyet fel szeretnél tölteni</h2>
+    <form action="képkonvertálás.php" method="post" enctype="multipart/form-data">
+        <!--enctype="multipart/form-data" ez az encodolás típusa, ez azt jelenti, hogy van az űrlapnak a típusa, onnantól kezdve, hogy fájl feltöltő került az oldalra, bekerül a rendszerbe bináris adat is, és azt másként kell kezelni, úgyhogy elő jön egy másik nagy gyűjtő,aminek $_FILES szuperglobális tömb a neve, ami viszont csak akkor jelenik meg ha ez a multipart attribútum meg van adva a fájl feltöltő inputra, mert ha ez pl lemarad akkor nem tudunk fájlt feltölteni a rendszerünkbe.-->
+
+        <input type="file" name="kép"><br>
+        <input type="submit" value="Küldés">
+
+
+    </form>
+</body>
+
+</html>

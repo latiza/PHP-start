@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            margin: auto;
+        }
+        
+        fieldset {
+            border-radius: 10px;
+            margin: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="1form.php" method="post">
+            <fieldset>
+                <legend> <b>Űrlap</b>
+                </legend>
+                <fieldset>
+                    <legend><b>Név:</b></legend>
+
+                    <br>
+                    <input type="text" name="nev"><br>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Napok</b> </legend>
+                    <input type="radio" name="nap" value="1"> Hétfő<br>
+                    <input type="radio" name="nap" value="2"> Kedd<br>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend><b> Tananyagok</b>
+                    </legend>
+                    <input type="checkbox" name="anyag" value="HTML"> HTML<br>
+                    <input type="checkbox" name="anyag" value="PHP"> PHP<br>
+                    <br></fieldset>
+                <fieldset>
+                    <legend><b> Csoport</b>
+                    </legend>
+
+                    <select name="csoport">
+                        <option value="0">Válassz csoportot
+          <option value="1">Első
+          <option value="2">Második
+        </select>
+
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Mehet">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

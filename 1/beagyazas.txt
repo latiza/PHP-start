@@ -1,0 +1,1 @@
+Na és amit egy text fájlba írunk, na persze azt is simán beemelhetjük a főoldalunkba az include() függvény segítségével. 
